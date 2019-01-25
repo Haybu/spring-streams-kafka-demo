@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: sink_stream
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: sink
+          contentType: text/pain
+      kafka:
+        brokers: localhost
+        defaultBrokerPort: 9092

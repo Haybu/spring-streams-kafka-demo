@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: processor_stream
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: source
+          contentType: text/plain
+        output:
+          destination: sink
+          contentType: text/plain
+      kafka:
+        brokers: localhost
+        defaultBrokerPort: 9092

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: source_stream
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: source
+          contentType: text/plain
+      kafka:
+        brokers: localhost:9092
